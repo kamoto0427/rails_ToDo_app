@@ -8,6 +8,7 @@ class TasksController < ApplicationController
   end
 
   def create
+    redirect_to '/tasks'
   end
 
   def edit
