@@ -1,2 +1,5 @@
 <h1>Todo作成ページ</h1>
-<%= link_to 'タスクを作成', '/' %>
+<%= form_with url: '/tasks/create', local:true do |f| %>
+  <p><%= f.text_field :title %></p>
+  <p><%= f.submit 'タスクを作成する' %></p>
+<% end %>
